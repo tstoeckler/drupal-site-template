@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "description": "",
+  "type": "",
+  "homepage": "",
+  "license": "",
+  "authors": [
+    {
+      "name": "",
+      "email": "",
+      "homepage": "",
+      "role": ""
+    }
+  ],
+  "support": {
+    "email": "",
+    "issues": "",
+    "source": ""
+  },
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  }
+}
