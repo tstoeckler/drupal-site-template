@@ -38,7 +38,7 @@
           "type": "zip"
         },
         "source": {
-          "url": "git@github.com:dawehner/drupal-core.git",
+          "url": "git@github.com:tstoeckler/drupal-core.git",
           "type": "git",
           "reference": "8.0.0-beta2"
         },
@@ -84,6 +84,9 @@
       }
     }
   ],
+  "scripts": {
+    "post-install-cmd": "scripts/composer/post-install.sh"
+  },
   "extra": {
     "installer-paths": {
       "web/core": ["type:drupal-core"]
