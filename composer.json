@@ -12,7 +12,8 @@
     "support": {},
     "require": {
         "composer/installers": "dev-drupal-core",
-        "drupal/drupal-core": "8.0.*"
+        "drupal/drupal-core": "8.0.*",
+        "drush/drush": "dev-master"
     },
     "require-dev": {},
     "autoload": {
