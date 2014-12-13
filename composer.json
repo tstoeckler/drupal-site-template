@@ -9,14 +9,14 @@
             "role": ""
         }
     ],
-    "support": [],
+    "support": {},
     "require": {
         "composer/installers": "dev-drupal-core",
         "drupal/drupal-core": "8.0.*"
     },
-    "require-dev": [],
+    "require-dev": {},
     "autoload": {
-        "psr-4": []
+        "psr-4": {}
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
