@@ -13,7 +13,7 @@
     "require": {
         "composer/installers": "dev-drupal-core",
         "drupal/drupal-core": "dev-8.0.x",
-        "drush/drush": "dev-master"
+        "drush/drush": "dev-site-install-class-loader"
     },
     "require-dev": {},
     "autoload": {
@@ -25,6 +25,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:tstoeckler/installers.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:tstoeckler/drush.git"
         },
         {
             "type": "package",
