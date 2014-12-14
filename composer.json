@@ -12,7 +12,7 @@
     "support": {},
     "require": {
         "composer/installers": "dev-drupal-core",
-        "drupal/drupal-core": "8.0.*",
+        "drupal/drupal-core": "dev-8.0.x",
         "drush/drush": "dev-master"
     },
     "require-dev": {},
@@ -30,15 +30,15 @@
             "type": "package",
             "package": {
                 "name": "drupal/drupal-core",
-                "version": "8.0.0-beta2",
+                "version": "dev-8.0.x",
                 "dist": {
-                    "url": "https://github.com/tstoeckler/drupal-core/archive/8.0.0-beta2.zip",
+                    "url": "https://github.com/tstoeckler/drupal-core/archive/8.0.x.zip",
                     "type": "zip"
                 },
                 "source": {
                     "url": "git@github.com:tstoeckler/drupal-core.git",
                     "type": "git",
-                    "reference": "8.0.0-beta2"
+                    "reference": "dev-8.0.x"
                 },
                 "description": "Drupal is an open source content management platform powering millions of websites and applications.",
                 "type": "drupal-core",
@@ -46,16 +46,17 @@
                 "require": {
                     "php": ">=5.4.5",
                     "sdboyer/gliph": "0.1.*",
-                    "symfony/class-loader": "2.5.*",
-                    "symfony/css-selector": "2.5.*",
-                    "symfony/dependency-injection": "2.5.*",
-                    "symfony/event-dispatcher": "2.5.*",
-                    "symfony/http-foundation": "2.5.*",
-                    "symfony/http-kernel": "2.5.*",
-                    "symfony/routing": "2.5.*",
-                    "symfony/serializer": "2.5.*",
-                    "symfony/validator": "2.5.*",
-                    "symfony/yaml": "2.6.0-beta1",
+                    "symfony/class-loader": "2.6.*",
+                    "symfony/css-selector": "2.6.*",
+                    "symfony/dependency-injection": "2.6.*",
+                    "symfony/event-dispatcher": "2.6.*",
+                    "symfony/http-foundation": "2.6.*",
+                    "symfony/http-kernel": "2.6.*",
+                    "symfony/routing": "2.6.*",
+                    "symfony/serializer": "2.6.*",
+                    "symfony/validator": "2.6.*",
+                    "symfony/process": "2.6.*",
+                    "symfony/yaml": "2.6.*",
                     "twig/twig": "1.16.*",
                     "doctrine/common": ">=2.4.2",
                     "doctrine/annotations": "1.2.*",
