@@ -1,7 +1,0 @@
-{
-  "_readme": [
-    "This file does not exist for use with Composer, but is required for Drush",
-    "to detect this directory as a proper Drupal 8 root. Use the composer.json",
-    "file in the parent directory instead."
-  ]
-}
