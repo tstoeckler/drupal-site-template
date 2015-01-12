@@ -25,10 +25,6 @@
         {
             "type": "vcs",
             "url": "git@github.com:composer/installers.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:tstoeckler/drupal-core.git"
         }
     ],
     "scripts": {
