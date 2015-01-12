@@ -11,7 +11,7 @@
     ],
     "support": {},
     "require": {
-        "composer/installers": "dev-drupal-core",
+        "composer/installers": "dev-master",
         "drupal/core": "8.0.*",
         "drush/drush": "dev-master"
     },
@@ -24,7 +24,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:tstoeckler/installers.git"
+            "url": "git@github.com:composer/installers.git"
         },
         {
             "type": "vcs",
