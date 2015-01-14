@@ -32,9 +32,10 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ]
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib": ["type:drupal-module"],
+            "web/profiles/contrib": ["type:drupal-profile"],
+            "web/themes/contrib": ["type:drupal-theme"]
         }
     }
 }
