@@ -11,7 +11,7 @@
     ],
     "support": {},
     "require": {
-        "composer/installers": "dev-master",
+        "composer/installers": "^1.0.20",
         "drupal/core": "8.0.*",
         "drush/drush": "dev-master"
     },
