@@ -11,3 +11,9 @@ if [ ! -f web/sites/default/services.yml ]
     cp web/sites/default/default.services.yml web/sites/default/services.yml
     chmod 777 web/sites/default/services.yml
 fi
+
+# Prepare the files directory for installation
+if [ ! -d web/sites/default/files ]
+  then
+    mkdir -m777 web/sites/default/files
+fi
