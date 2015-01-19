@@ -21,6 +21,12 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:tstoeckler/drupal-core.git"
+        }
+    ],
     "scripts": {
         "post-install-cmd": "scripts/composer/post-install.sh"
     },
