@@ -21,12 +21,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:composer/installers.git"
-        }
-    ],
     "scripts": {
         "post-install-cmd": "scripts/composer/post-install.sh"
     },
