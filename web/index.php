@@ -3,11 +3,16 @@
 /**
  * @file
  * The PHP page that serves all page requests on a Drupal installation.
+ *
+ * All Drupal code is released under the GNU General Public License.
+ * See COPYRIGHT.txt and LICENSE.txt files in the "core" directory.
  */
 
 use Drupal\Core\DrupalKernel;
 use Drupal\Core\Site\Settings;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 $autoloader = require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -16,10 +21,14 @@ try {
   $request = Request::createFromGlobals();
   $kernel = DrupalKernel::createFromRequest($request, $autoloader, 'prod');
   $response = $kernel
-    ->handle($request)
-    // Handle the response object.
-    ->prepare($request)->send();
+      ->handle($request)
+      // Handle the response object.
+      ->prepare($request)->send();
   $kernel->terminate($request, $response);
+}
+catch (HttpExceptionInterface $e) {
+  $response = new Response($e->getMessage(), $e->getStatusCode());
+  $response->prepare($request)->send();
 }
 catch (Exception $e) {
   $message = 'If you have just changed code (for example deployed a new module or moved an existing one) read <a href="http://drupal.org/documentation/rebuild">http://drupal.org/documentation/rebuild</a>';
