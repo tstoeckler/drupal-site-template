@@ -13,7 +13,7 @@
     "require": {
         "composer/installers": "^1.0.20",
         "drupal/core": "8.0.*",
-        "drush/drush": "dev-master"
+        "drush/drush": "7.0.*"
     },
     "require-dev": {},
     "autoload": {
@@ -21,12 +21,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:tstoeckler/drupal-core.git"
-        }
-    ],
     "scripts": {
         "post-install-cmd": "scripts/composer/post-install.sh"
     },
