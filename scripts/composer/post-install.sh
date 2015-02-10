@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Prepare the settings file for installation
 if [ ! -f web/sites/default/settings.php ]
   then
