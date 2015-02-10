@@ -19,3 +19,10 @@ if [ ! -d web/sites/default/files ]
   then
     mkdir -m777 web/sites/default/files
 fi
+
+# Use the correct autoloader in the core front controllers.
+# See https://www.drupal.org/node/2406681
+for FILE in "authorize.php" "install.php" "rebuild.php"
+do
+  sed -i "s/require_once\ __DIR__\ \.\ '\/vendor\/autoload\.php'\;/require_once\ __DIR__\ \.\ '\/..\/..\/vendor\/autoload\.php'\;/" web/core/$FILE
+done
