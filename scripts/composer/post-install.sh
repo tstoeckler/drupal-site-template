@@ -24,5 +24,5 @@ fi
 # See https://www.drupal.org/node/2406681
 for FILE in "authorize.php" "install.php" "rebuild.php"
 do
-  sed -i "s/require_once\ __DIR__\ \.\ '\/vendor\/autoload\.php'\;/require_once\ __DIR__\ \.\ '\/..\/..\/vendor\/autoload\.php'\;/" web/core/$FILE
+  sed -i "s/require_once\ __DIR__\ \.\ '\/vendor\/autoload\.php'\;/require_once\ __DIR__\ \.\ '\/..\/..\/vendor\/autoload\.php'\;/" $PWD/web/core/$FILE
 done
