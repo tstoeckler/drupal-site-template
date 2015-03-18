@@ -12,7 +12,7 @@
     "support": {},
     "require": {
         "composer/installers": "^1.0.20",
-        "drupal/core": "8.0.0-beta7",
+        "drupal/core": "8.0.0-beta7"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
