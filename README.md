@@ -1,4 +1,4 @@
-# Plato Tipico_d8
+# Plato Tipico for Drupal 8
 Drupal 8 distro with a typical setup in websites built with Composer
 
 ## Features
